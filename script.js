@@ -1,3 +1,4 @@
+// Desktop Dropdown Menu 
 const toggleIcon = document.querySelector(".menu-w-dropdown");
 const sol_dropdown_container = document.querySelector(
   ".solutions__dropdown__content-container"
@@ -5,6 +6,13 @@ const sol_dropdown_container = document.querySelector(
 
 toggleIcon.addEventListener("click", () => {
   sol_dropdown_container.classList.toggle("w--open");
+});
+
+// Mobile Menu
+const menuIcon = document.querySelector(".menu-icon");
+const mobileMenu = document.querySelector(".mobile-menu");
+menuIcon.addEventListener("click", () => {
+  mobileMenu.classList.toggle("w--open");
 });
 
 // Typewriter effect
